@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #testBox{
+        width: 500px;
+        height: 500px;
+        margin: 20px;
+        border: 1px solid black;
+    }
+    #icon{
+        width: 50px;
+        height: 50px;
+    }
+</style>
+<body>
+    <div id="testBox">
+        <img src="logo_or.svg" alt="" id="icon">
+    </div>
+</body>
+<script>
+    var icon = document.getElementById('icon');
+
+    // 위 38, 아래 40, 왼쪽 37, 오른쪽 39
+    // element.offsetTop : 부모요소가 position relative 면 부모 기준 top
+    //                     아니면 document 기준 top
+    // element.offsetLeft : 부모요소가 position relative 면 부모 기준 left
+    //                     아니면 document 기준 left
+    document.onkeydown = function(e){
+        switch (e.keyCode) {
+            // 위 
+            case 38:
+                
+                break;
+            // 아래
+            case 40:
+                
+                break;
+            // 왼쪽
+            case 37:
+                
+                break;
+            // 오른쪽
+            case 39:
+                
+                break;
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .active{
+            background-color: rgb(0%, 74.7%, 100%);
+        }
+        #box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="firstCls secondCls">
+        <h1>My name is Box</h1>
+    </div>
+    <button id="changeBack">background-color</button>
+    <button id="changeColor">color</button>
+    <button id="removeThis">remove this</button>
+    <button id="getcls">get classes</button>
+    <button id="clsAdd">class add</button>
+
+</body>
+<script>
+    var box = document.getElementById('box');
+    var changeBack = document.getElementById('changeBack');
+    var changeColor = document.getElementById('changeColor');
+    var removeThis = document.getElementById('removeThis'); 
+    var getcls = document.getElementById('getcls');
+    var clsAdd = document.getElementById('clsAdd');
+
+    changeBack.onclick = function(){
+        // box.style.backgroundColor = "black";
+        box.style.backgroundColor = "#000";
+    }
+    changeColor.onclick = function(){
+        box.style.color = "white";
+    }
+    removeThis.onclick = function(){
+        box.style.display = "none";
+    }
+    getcls.onclick = function(){
+        console.log(box.className);
+    }
+    clsAdd.onclick = function(){
+        box.className = 'active';
+        // box.className += ' active';
+    }
+
+</script>
+</html>

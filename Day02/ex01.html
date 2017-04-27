@@ -10,21 +10,29 @@
     </style>
 </head>
 <body>
-    <!--<ul id="list">
+    <ul id="list">
         <li class="test1 item">test1</li>
         <li class="test2 item">test2</li>
         <li class="test1 item">test1</li>
-        <li class="test2 item">test2</li>
+        <li id="shin" class="test2 item">test2</li>
         <li class="test3 item"></li>
         <li id="test4" class="attr">this is test4</li>
         <li id="add">text</li>
-    </ul>-->
+    </ul>
 </body>
 <script>
     // var list = document.getElementById("list");
+    var list = document.getElementsByClassName("item");
     // console.log(list);
 
-    // var test3 = document.getElementsByClassName("test3");
+    for(var i=0; i< list.length; i++){
+        console.log(list[i].getAttribute('id'));
+        console.log(list[i].getAttribute('class'));
+        if(list[i].getAttribute('id') == "shin"){
+            list[i].innerHTML = "hello world";
+        }
+    }
+
     // test3[0].innerHTML = "Hello world";
     // console.log(test3);
 
@@ -40,22 +48,14 @@
 
     // list.removeChild(test4);
 
+    // h1 element 만들어서 id = shin 에 Hello world 넣기
+
     // var exCreate = document.createElement('button');
     // var exText = document.createTextNode('Click');
     // exCreate.appendChild(exText);
     
     // var add = document.getElementById('add');
     // add.appendChild(exCreate);
-
-    for(var i=0; i<=100; i++){
-        if(i%2==0 || i%3==0 || i%5==0){
-            if( (i%6 == 0 || i%15 == 0) && i%30 != 0 ){
-                continue;
-            }
-            console.log(i);
-        }
-    }
-
 
 </script>
 </html>

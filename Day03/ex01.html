@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // 함수 선언하기 1
+    function first_fn(){
+        console.log('Hello world11111');
+    }
+
+    // 함수 선언하기 2
+    var second_fn = function(){
+        console.log('Hello world22222');
+    }
+
+    // 함수 사용하기
+    first_fn();
+    second_fn();
+
+    // 인자값을 받는 함수
+
+    function multiple(a, b){
+        return a * b;
+    }
+
+    console.log(multiple(3, 5));
+
+    // 즉시 실행함수
+    (function (){
+        console.log("Say Hello now");
+    })();
+
+</script>
+</html>

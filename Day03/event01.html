@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #testBox{
+        width: 500px;
+        height: 500px;
+        margin: 20px;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <div id="testBox">
+    </div>
+    <input type="text" id="field">
+</body>
+<script>
+    // 이벤트
+    // onchange, onclick, onmouseover, onmouseout, onkeydown, onload
+    var box = document.getElementById('testBox');
+    var field = document.getElementById('field');
+    var icon = document.getElementById('icon');
+    console.log(box);
+
+    // box.onclick = function(){
+    //     alert('this is click event');
+    // }
+    // field.onkeydown = function(e){
+    //     console.log(e.keyCode);
+    // }
+
+    document.onkeydown = function(e){
+        console.log(e.keyCode);
+        console.log(icon.offsetLeft);
+        console.log(icon.offsetTop);
+    }
+    
+
+</script>
+</html>

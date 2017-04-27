@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #testBox{
+        width: 500px;
+        height: 500px;
+        margin: 20px;
+        border: 1px solid black;
+        position: relative;
+    }
+    #icon{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+</style>
+<body>
+    <div id="testBox">
+        <img src="logo_or.svg" alt="" id="icon">
+    </div>
+</body>
+<script>
+    var icon = document.getElementById('icon');
+    var box = document.getElementById('testBox');
+
+    // 위 38, 아래 40, 왼쪽 37, 오른쪽 39
+    document.onkeydown = function(e){
+        switch (e.keyCode) {
+            // 위 
+            case 38:
+                console.log('up');
+                var iconTop = icon.offsetTop;
+                if(icon.offsetTop > 0){
+                    icon.style.top = iconTop - 50 + 'px';
+                }
+                break;
+            // 아래
+            case 40:
+                console.log('down');
+                var iconTop = icon.offsetTop;
+                if(icon.offsetTop < (box.offsetHeight - icon.offsetHeight - 2)){
+                    icon.style.top = iconTop + 50 + 'px';
+                }
+                break;
+            // 왼쪽
+            case 37:
+                console.log('left');
+                var iconLeft = icon.offsetLeft;
+                if(icon.offsetLeft > 0){
+                    icon.style.left = iconLeft - 50 + 'px';
+                }
+                break;
+            // 오른쪽
+            case 39:
+                console.log('right');
+                var iconLeft = icon.offsetLeft;
+                if(icon.offsetLeft < (box.offsetWidth - icon.offsetWidth - 2)){
+                    icon.style.left = iconLeft + 50 + 'px';
+                }
+                break;
+        }
+    }
+</script>
+</html>
