@@ -1,0 +1,1 @@
+https://scrapehero.freshdesk.com/support/solutions/articles/5000008629-data-formats-csv-json-xml-or-sql

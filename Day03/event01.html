@@ -18,6 +18,14 @@
     <div id="testBox">
     </div>
     <input type="text" id="field">
+    <select name="selTest" id="selTest">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
 </body>
 <script>
     // 이벤트
@@ -27,18 +35,24 @@
     var icon = document.getElementById('icon');
     console.log(box);
 
-    // box.onclick = function(){
-    //     alert('this is click event');
-    // }
+    box.onclick = function(){
+        alert('this is click event');
+    }
     // field.onkeydown = function(e){
     //     console.log(e.keyCode);
     // }
 
-    document.onkeydown = function(e){
-        console.log(e.keyCode);
-        console.log(icon.offsetLeft);
-        console.log(icon.offsetTop);
-    }
+    // document.onkeydown = function(e){
+    //     console.log(e.keyCode);
+    //     console.log(icon.offsetLeft);
+    //     console.log(icon.offsetTop);
+    // }
+
+    // var sel = document.getElementById('selTest');
+    // sel.onchange = function(e){
+    //     console.log("I changed !!!" + this.value);
+    // }
+
     
 
 </script>

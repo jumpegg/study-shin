@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<button type="button" id="thisTest">thistest</button>
+</body>
+<script>
+	// var fntest = function(){
+	// 	console.log(this);
+	// }
+
+	// fntest();
+
+	// var thisTest = document.getElementById('thisTest');
+	// thisTest.onclick = function(e){
+	// 	console.log(e);
+	// 	console.log(this);
+	// }
+
+	function thisIsThis(){
+		this.name = 'wonny';
+		this.age = '20'
+		console.log(this);
+	}
+
+	thisIsThis.prototype.myname = 'zonny';
+
+	console.log(thisIsThis);
+
+	var objTest1 = new thisIsThis();
+	var objTest2 = new thisIsThis();
+
+	objTest2.age = '30';
+
+	console.log(objTest1);
+	console.log(objTest2);
+
+	console.log(objTest1.myname);
+	console.log(objTest1.name);
+	console.log(objTest1.age);
+
+	// var obj1 = {
+	// 	name : 'obj1'
+	// }
+	// console.log(obj1);
+	// console.log(typeof obj1);
+
+	// var test = new obj1();
+	// console.log(test);
+
+	// var obj2 = {
+	// 	name : 'obj2',
+	// 	getname : function(){
+	// 		console.log(this.name);
+	// 	}
+	// }
+
+	// obj2.getname();
+
+	// function Person(name, age){
+	// 	this.name = name;
+	// 	this.age = age;
+	// }
+
+	// var firstPerson = new Person("이원석", 31);
+	// console.log(firstPerson);
+</script>
+</html>
