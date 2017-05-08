@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<ul class="ul_wrapper">
+		<li>test1</li>
+		<li>test2</li>
+		<li>test3
+			<ul>
+				<li><a id="naver" href="https://www.naver.com">네이버</a></li>
+				<li class="now">
+					<p>child2</p>
+				</li>
+				<li><input type="text" id="inputWrapper" value="this is value"></li>
+			</ul>
+		</li>
+		<li>test4</li>
+		<li>test5</li>
+	</ul>
+</body>
+<script>
+	// 값 가져오기
+	// var now = $('.now');
+
+	// console.log(now);
+
+	// text 값 가져오기
+	// console.log(now.text());
+	// console.log(now.html());
+
+	// value 가 있는 요소에서 value 가져오기
+	// var inputWrapper = $('#inputWrapper');
+	// console.log(inputWrapper.val());
+
+	// 특정 속성 값 가져오기
+	// var naver = $('#naver');
+	// console.log(naver.attr("href"));
+
+	// text 값 셋팅하기
+	// var now = $('.now');
+	// now.text("Hello world");
+	// now.html("<b>Hello world</b>");
+
+	// 속성 값 셋팅하기
+	// var naver = $('#naver');
+	// naver.attr('href',"http://www.daum.net");
+	// naver.attr({
+	// 	'href':'http://www.daum.net',
+	// 	'title':'daum'
+	// })
+
+	
+</script>
+</html>

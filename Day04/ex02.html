@@ -22,33 +22,41 @@
 	// 	console.log(this);
 	// }
 
-	function thisIsThis(){
-		this.name = 'wonny';
-		this.age = '20'
-		console.log(this);
-	}
+	// function thisIsThis(){
+	// 	this.name = 'wonny';
+	// 	this.age = '20'
+	// 	console.log(this);
+	// }
 
-	thisIsThis.prototype.myname = 'zonny';
+	// thisIsThis.prototype.myname = 'zonny';
 
-	console.log(thisIsThis);
+	// console.log(thisIsThis);
 
-	var objTest1 = new thisIsThis();
-	var objTest2 = new thisIsThis();
+	// var objTest1 = new thisIsThis();
+	// var objTest2 = new thisIsThis();
 
-	objTest2.age = '30';
+	// objTest2.age = '30';
 
-	console.log(objTest1);
-	console.log(objTest2);
+	// console.log(objTest1);
+	// console.log(objTest2);
 
-	console.log(objTest1.myname);
-	console.log(objTest1.name);
-	console.log(objTest1.age);
+	// console.log(objTest1.myname);
+	// console.log(objTest1.name);
+	// console.log(objTest1.age);
 
 	// var obj1 = {
 	// 	name : 'obj1'
 	// }
+	// var num = 12;
+	// var testS = 'test';
+	// var boolbool = true;
+
 	// console.log(obj1);
 	// console.log(typeof obj1);
+	// console.log(typeof num);
+	// console.log(typeof testS);
+	// console.log(typeof boolbool);
+
 
 	// var test = new obj1();
 	// console.log(test);
@@ -67,7 +75,44 @@
 	// 	this.age = age;
 	// }
 
+	// function PersonSimple(){
+	// 	this.name = "";
+	// 	this.age = "";
+	// 	this.num = "";
+	// }
+
 	// var firstPerson = new Person("이원석", 31);
+	// var secondPerson = new Person("wonny", 30);
+
+	// var simplePerson = new PersonSimple();
+
+	// console.log(simplePerson);
+
 	// console.log(firstPerson);
+	// console.log(secondPerson);
+
+	// function Person(){
+	// 	this.schoolName = "우리학교",
+	// 	this.Rank = "NO.1";
+	// }
+
+	// function Teacher(){
+	// 	Person.call(this);
+	// 	this.teacherCode = "tch";
+	// }
+
+	// Teacher.prototype = new Person();
+
+	// function Student(){
+	// 	Person.call(this);
+	// 	this.grade = "first";
+	// }
+
+	// Student.prototype = new Person();
+
+	// console.log(new Person());
+	// console.log(new Teacher());
+	// console.log(new Student());
+
 </script>
 </html>

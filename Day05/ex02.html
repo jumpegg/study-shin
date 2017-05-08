@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<ul>
+		<li>test1</li>
+		<li>test2</li>
+		<li>test3
+			<ul>
+				<li>child1</li>
+				<li class="child2">child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>test4</li>
+		<li>test5</li>
+	</ul>
+	<ul class="eleBox">
+		<li>element1</li>
+		<li class="willDel">element2</li>
+		<li class="willDel">element3</li>
+	</ul>
+</body>
+<script>
+	var child2 = $('.child2');
+	var eleBox = $('.eleBox');
+	var liList = $('.eleBox li');
+	
+	// append, prepend 값 직접 입력해서 붙여넣기
+	// child2.append(" append");
+	// child2.prepend("prepend ");
+	// child2.append(" <b>append</b>");
+	// child2.prepend("<b>prepend</b> ");
+
+	// element 붙여넣기
+	// child2.append(eleBox);
+	// child2.prepend(eleBox);
+
+	// after, before
+	// child2.after(eleBox);
+	// child2.before(eleBox);
+
+	// remove, empty
+	// eleBox.empty();
+	// eleBox.remove();
+	// liList.remove('.willDel');
+
+
+
+
+</script>
+</html>

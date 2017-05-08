@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+		<div class="toggler">
+			test1
+		</div>
+			<ul class="list">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>
+		<div class="toggler">
+			test2
+		</div>
+			<ul class="list">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>
+		<div class="toggler">
+			test3
+		</div>
+			<ul class="list">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>
+		<div class="toggler">
+			test4
+		</div>
+			<ul class="list">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>
+		<div class="toggler">
+			test5
+		</div>
+			<ul class="list">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>
+		<div class="toggler">
+			test6
+		</div>
+			<ul class="list">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>
+		<div class="toggler">
+			test7
+		</div>
+			<ul class="list">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>
+		<div class="toggler">
+			test8
+		</div>
+			<ul class="list">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>
+		<div class="toggler">
+			test9
+		</div>
+			<ul class="list">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>
+		<div class="toggler">
+			test10
+		</div>
+			<ul class="list">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+	</ul>
+<script>		
+	var list = document.getElementsByClassName('list');
+	var toggler = document.getElementsByClassName('toggler');
+
+	for(var i = 0; i < toggler.length; i++){
+		toggler[i].onclick = function(){
+			console.log(i);
+			console.log(list[0]);
+			if(list[i].style.display == 'none' || list[i].style.display == ''){
+				list[i].style.display = 'block';
+			}else{
+				list[i].style.display = 'none';
+			}
+		}
+	}
+	
+	
+</script>
+</body>
+</html>
