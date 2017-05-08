@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<ul class="end">
+		<li>test1</li>
+		<li>test2</li>
+		<li>test3
+			<ul>
+				<li>child1</li>
+				<li>child2</li>
+				<li class="now">child3
+					<ul>
+						<li>item1</li>
+						<li class="imhere">item2</li>
+						<li>item3</li>
+					</ul>
+				</li>
+				<li>child4</li>
+				<li>child5</li>
+			</ul>
+		</li>
+		<li>test4</li>
+		<li>test5</li>
+	</ul>
+</body>
+<script>
+	var now = $('.now');
+
+	// parent
+	// console.log(now.parent());
+	// console.log(now.parents());
+	// console.log(now.parents('ul'));
+	// console.log(now.parentsUntil('.end'));
+
+	// child
+	// console.log(now.children());
+	// console.log(now.find('.imhere'));
+
+	// siblings
+	// console.log(now.siblings());
+	// console.log(now.next());
+	// console.log(now.nextAll());
+	// console.log(now.prev());
+	// console.log(now.prevAll());
+
+
+</script>
+</html>
