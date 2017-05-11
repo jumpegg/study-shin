@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="jquery-3.2.1.min.js"></script>
+</head>
+<style>
+	.box{
+		width: 200px;
+		height: 200px;
+		border: 1px solid black;
+	}
+</style>
+<body>
+	<div class="ani1 box"></div>
+	<div class="ani2 box"></div>
+	<div class="ani3 box"></div>
+	<div class="ani4 box"></div>
+	<div class="ani5 box"></div>
+</body>
+<script>
+	var ani1 = $(".ani1");
+	ani1.click(function(){
+		alert('click!!');
+	})
+	var ani2 = $('.ani2');
+	ani2.dblclick(function(){
+		alert('double click!!');
+	})
+	var ani3 = $('.ani3');
+	ani3.mouseenter(function(){
+		alert('mouse enter');
+	})
+	var ani3 = $('.ani3');
+	ani3.mouseleave(function(){
+		alert('mouse leave');
+	})
+	var ani4 = $('.ani4');
+	ani4.hover(function(){
+		alert('hover');
+	})
+	var ani5 = $('.ani5');
+	ani5.on("click", function(){
+		$(this).hide();
+	})
+</script>
+</html>
