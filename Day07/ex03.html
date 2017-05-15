@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="jquery.easing.1.3.js"></script>
+</head>
+<style>
+	.red{
+		color: red;
+	}
+	.child{
+		display: none;
+	}
+	.show{
+		display: block;
+	}
+</style>
+<body>
+	<ul class="list">
+		<li>test01
+			<ul class="child">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>test02
+			<ul class="child">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>test03
+			<ul class="child">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>test04
+			<ul class="child">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>test05
+			<ul class="child">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>test06
+			<ul class="child">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>test07
+			<ul class="child">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>test08
+			<ul class="child">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>test09
+			<ul class="child">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+		<li>test10
+			<ul class="child">
+				<li>child1</li>
+				<li>child2</li>
+				<li>child3</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+<script>
+	$.fn.myClick = function(){
+		$(this).find('ul').toggleClass('show');
+	}
+	
+	$('.list li').click(function(){
+		$(this).myClick();
+	});
+	
+
+</script>
+</html>
